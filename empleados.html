@@ -6,7 +6,7 @@
     <title>Gestión de Empleados</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/sesion.js" ></script>
+    <script src="js/sesion.js"></script>
     <script src="js/inicio-s.js"></script>
 </head>
 <body>
@@ -19,7 +19,7 @@
                     <img src="imagenes/whatsapp.png" alt="WhatsApp" style="width: 20px;"> WhatsApp
                 </a>                       
                 <a href="terminos.html" class="btn btn-outline-secondary btn-sm mr-2">
-                    Terminos y condiciones
+                    Términos y condiciones
                </a>   
             </div>
         </div>
@@ -50,75 +50,77 @@
     <div class="container mt-5">
         <h2>Gestión de Empleados</h2>
         
-        <!-- Tabla de Empleados -->
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Apellidos</th>
-                    <th>Correo</th>
-                    <th>Teléfono</th>
-                    <th>Posición</th>
-                    <th>Estado</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody id="employeeTableBody">
-                <tr>
-                    <td>1</td>
-                    <td>Juan</td>
-                    <td>Pérez</td>
-                    <td>juan.perez@email.com</td>
-                    <td>3235416514</td>
-                    <td>Gerente</td>
-                    <td>Activo</td>
-                    <td>
-                        <button class="btn btn-warning btn-sm" onclick="editEmployee(1)">Editar</button>
-                        <button class="btn btn-danger btn-sm" onclick="deleteEmployee(1)">Eliminar</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Juan</td>
-                    <td>Castro</td>
-                    <td>juan99asdadz@email.com</td>
-                    <td>3216546540</td>
-                    <td>Logistica</td>
-                    <td>Activo</td>
-                    <td>
-                        <button class="btn btn-warning btn-sm" onclick="editEmployee(1)">Editar</button>
-                        <button class="btn btn-danger btn-sm" onclick="deleteEmployee(1)">Eliminar</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Marlon</td>
-                    <td>Castro</td>
-                    <td>marlon99castro00@email.com</td>
-                    <td>3214567890</td>
-                    <td>Gerente</td>
-                    <td>Activo</td>
-                    <td>
-                        <button class="btn btn-warning btn-sm" onclick="editEmployee(1)">Editar</button>
-                        <button class="btn btn-danger btn-sm" onclick="deleteEmployee(1)">Eliminar</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Erika</td>
-                    <td>Hernandez</td>
-                    <td>erikisvis2023@email.com</td>
-                    <td>3215666190</td>
-                    <td>Piloto</td>
-                    <td>Activo</td>
-                    <td>
-                        <button class="btn btn-warning btn-sm" onclick="editEmployee(1)">Editar</button>
-                        <button class="btn btn-danger btn-sm" onclick="deleteEmployee(1)">Eliminar</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <!-- Tabla de Empleados Responsiva -->
+        <div class="table-responsive">
+            <table class="table table-striped table-sm">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Correo</th>
+                        <th>Teléfono</th>
+                        <th>Posición</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeTableBody">
+                    <tr>
+                        <td>1</td>
+                        <td>Juan</td>
+                        <td>Pérez</td>
+                        <td>juan.perez@email.com</td>
+                        <td>3235416514</td>
+                        <td>Gerente</td>
+                        <td>Activo</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm" onclick="editEmployee(1)">Editar</button>
+                            <button class="btn btn-danger btn-sm" onclick="deleteEmployee(1)">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Juan</td>
+                        <td>Castro</td>
+                        <td>juan99asdadz@email.com</td>
+                        <td>3216546540</td>
+                        <td>Logistica</td>
+                        <td>Activo</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm" onclick="editEmployee(1)">Editar</button>
+                            <button class="btn btn-danger btn-sm" onclick="deleteEmployee(1)">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Marlon</td>
+                        <td>Castro</td>
+                        <td>marlon99castro00@email.com</td>
+                        <td>3214567890</td>
+                        <td>Gerente</td>
+                        <td>Activo</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm" onclick="editEmployee(1)">Editar</button>
+                            <button class="btn btn-danger btn-sm" onclick="deleteEmployee(1)">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Erika</td>
+                        <td>Hernandez</td>
+                        <td>erikisvis2023@email.com</td>
+                        <td>3215666190</td>
+                        <td>Piloto</td>
+                        <td>Activo</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm" onclick="editEmployee(1)">Editar</button>
+                            <button class="btn btn-danger btn-sm" onclick="deleteEmployee(1)">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <!-- Formulario para Agregar/Editar Empleados -->
         <div class="card">
