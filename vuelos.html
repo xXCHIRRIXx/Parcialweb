@@ -208,6 +208,7 @@
                 
                 <div id="tripDetails" class="d-flex flex-wrap justify-content-between">
                     <div class="form-group col-md-2">
+                        <label>Cuidad origen</label>
                         <input type="text" class="form-control" id="origin" placeholder="Ciudad de origen" autocomplete="off" list="suggestions">
                         <datalist id="suggestions">
                             <option value="Bogotá">
@@ -217,15 +218,19 @@
                         </datalist>
                     </div>
                     <div class="form-group col-md-2">
+                        <label>Cuidad destino</label>
                         <input type="text" class="form-control" id="destination" placeholder="Ciudad de destino" autocomplete="off" list="suggestions">
                     </div>
                     <div class="form-group col-md-2">
+                        <label>Fecha salida</label>
                         <input type="date" class="form-control" id="departureDate">
                     </div>
                     <div class="form-group col-md-2" id="returnDateGroup">
+                        <label>Fecha regreso</label>
                         <input type="date" class="form-control" id="returnDate">
                     </div>
                     <div class="form-group col-md-2">
+                        <label>pasajeros</label>
                         <input type="number" class="form-control" id="passengers" min="1" value="1" placeholder="Pasajeros">
                     </div>
                     <div class="form-group col-md-2">

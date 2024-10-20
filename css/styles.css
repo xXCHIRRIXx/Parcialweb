@@ -316,6 +316,7 @@ a {
 .banner {
     position: relative;
     text-align: center;
+    width: 90%;
 }
 
 .banner-image {
