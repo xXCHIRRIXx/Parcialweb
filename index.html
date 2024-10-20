@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeropuerto Internacional</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+
+    <!-- Header Secundario -->
+    <header class="main-header">
+        <div class="main-header_nav-secondary py-2">
+            <div class="container d-flex justify-content-end">
+                <a href="https://wa.me/573005394101" target="_blank" class="btn btn-outline-secondary btn-sm mr-2">
+                    <img src="imagenes/whatsapp.png" alt="WhatsApp" style="width: 20px;"> WhatsApp
+                </a>              
+                <a href="terminos.html" class="btn btn-outline-secondary btn-sm mr-2">
+                    Terminos y condiciones
+               </a>            
+            </div>
+        </div>
+    
+        <!-- Header Principal -->
+        <div class="main-header_nav-primary bg-white py-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="imagenes/logo.png" alt="Aeropuerto Internacional" class="logo-img">
+                    </a>
+                </div>
+
+                <!-- Menú de Navegación -->
+                <nav class="nav">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link" href="vuelos.html">Vuelos</a>
+                    <a href="sesion.html" class="nav-link" id="loginLink">Iniciar sesión</a>
+                    <a href="#" id="logoutLink" class="nav-link" style="display: none;">Cerrar sesión</a>                    
+                    <a class="nav-link" href="estacionamiento.html">Reserva de Estacionamiento</a>
+                    <a class="nav-link" href="empleados.html">Gestión de Empleados</a>
+                </nav>                
+            </div>
+        </div>
+    </header>   
+
+    <!-- Tarjeta de Consulta de Vuelos -->
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h5>Consulta de Vuelos</h5>
+            </div>
+            <div class="card-body">
+                <div class="form-group checkbox-vuelos">
+                    <label>
+                        <input type="radio" name="tripType" value="roundTrip" checked class="custom-checkbox">
+                        <span></span> Ida y Vuelta
+                    </label>
+                    <label>
+                        <input type="radio" name="tripType" value="oneWay" class="custom-checkbox">
+                        <span></span> Ida
+                    </label>
+                </div>
+                
+                
+                <div id="tripDetails" class="d-flex flex-wrap justify-content-between">
+                    <div class="form-group col-md-2">
+                        <input type="text" class="form-control" id="origin" placeholder="Origen" autocomplete="off" list="suggestions">
+                        <datalist id="suggestions">
+                            <option value="Bogotá">
+                            <option value="Medellín">
+                            <option value="Cali">
+                            <option value="Cartagena">
+                        </datalist>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <input type="text" class="form-control" id="destination" placeholder="destino" autocomplete="off" list="suggestions">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <input type="date" class="form-control" id="departureDate">
+                    </div>
+                    <div class="form-group col-md-2" id="returnDateGroup">
+                        <input type="date" class="form-control" id="returnDate">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <input type="number" class="form-control" id="passengers" min="1" placeholder="Pasajeros">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <button class="btn btn-primary btn-suscribirse" id="searchButton">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner con texto de bienvenida -->
+    <div class="banner">
+        <img src="imagenes/banner.jpg" alt="Banner" class="banner-image">
+
+        <!-- Texto de bienvenida -->
+        <div class="banner-center">
+            <h1>Bienvenido a GATEWAY</h1>
+            <p>En GATEWAY, creemos que cada viaje es una oportunidad para descubrir nuevos horizontes, explorar culturas fascinantes y crear recuerdos inolvidables. Nuestro compromiso es ofrecerte las mejores ofertas y preparativos para que tu experiencia de viaje sea perfecta, desde el momento en que empiezas a soñar con tu destino hasta que llegas a casa lleno de historias que contar. ¡Deja que te acompañemos en cada paso del camino hacia tu próxima gran aventura!</p>
+        </div>
+    </div>
+
+
+    <!-- Título de Mejores Ofertas -->
+    <div class="container mt-5">
+        <h2 class="text-center">Las Mejores Ofertas</h2>
+        <div class="row mt-4">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4">
+                <a href="vuelos.html" class="card-ofertas-descripcion">
+                    <div class="card card-ofertas">
+                        <img src="imagenes/cancun.webp" alt="Cancún" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Cancún</h5>
+                            <p class="card-text">Desde $899.000 COP</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4">
+                <a href="vuelos.html" class="card-ofertas-descripcion">
+                    <div class="card card-ofertas">
+                        <img src="imagenes/barcelona.jpg" alt="Barcelona" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Barcelona</h5>
+                            <p class="card-text">Desde $1.899.000 COP</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="col-md-4">
+                <a href="vuelos.html" class="card-ofertas-descripcion" >
+                    <div class="card card-ofertas">
+                        <img src="imagenes/nuevayork.jpeg" alt="Nueva York" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Nueva York</h5>
+                            <p class="card-text">Desde $2.499.000 COP</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Título de Preparativos para Viajar -->
+    <div class="container mt-5">
+        <h2 class="text-center">Centro de soporte</h2>
+        <div class="row mt-4">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4">
+                <a href="soporte.html" class="card-ofertas-descripcion">
+                    <div class="card card-preparativos">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Check-in online</h5>
+                            <img src="imagenes/ticket.png" alt="checking" class="card-preparate-icon">
+                            <p class="card-text">Obtén tu pase de abordar y ahorra tiempo en el aeropuerto.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4">
+                <a href="soporte.html" class="card-ofertas-descripcion">
+                    <div class="card card-preparativos">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Centro de ayuda</h5>
+                            <img src="imagenes/apoyo.png" alt="Soporte" class="card-preparate-icon">
+                            <p class="card-text">Busca y encuentra información útil para resolver tus preguntas.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="col-md-4">
+                <a href="soporte.html" class="card-ofertas-descripcion">
+                    <div class="card card-preparativos">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Requisitos para viajar</h5>
+                            <img src="imagenes/requisito.png" alt="Requisitos" class="card-preparate-icon">
+                            <p class="card-text">Infórmate acerca de visas, vacunas y demás documentos.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Título del Carrusel -->
+    <div class="container mt-5">
+        <h2 class="text-center">Conoce Nuestras Novedades</h2>
+        <div id="novedadesCarrusel" class="carousel slide mt-4" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Primer Elemento del Carrusel -->
+                 <a href="ofertas.html">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card card-ofertas">
+                                    <img src="imagenes/novedad1.jpg" class="card-img-top" alt="Novedad 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-novedades-img">Membresía Premium</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-ofertas">
+                                    <img src="imagenes/novedad2.webp" class="card-img-top" alt="Novedad 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-novedades-img">Paquete de Viaje Familiar</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-ofertas">
+                                    <img src="imagenes/novedad3.webp" class="card-img-top" alt="Novedad 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-novedades-img">Excursiones Especiales</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Segundo Elemento del Carrusel -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card card-ofertas">
+                                    <img src="imagenes/novedad4.jpeg" class="card-img-top" alt="Novedad 4">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-novedades-img">Ofertas de Último Minuto</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-ofertas">
+                                    <img src="imagenes/novedad5.jpeg" class="card-img-top" alt="Novedad 5">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-novedades-img">Viajes de Aventura</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-ofertas">
+                                    <img src="imagenes/novedad6.avif" class="card-img-top" alt="Novedad 6">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-novedades-img">Descuentos por reserva</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Controles del Carrusel -->
+            <a class="carousel-control-prev" href="#novedadesCarrusel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#novedadesCarrusel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <footer class="footer mt-5">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="imagenes/logo.png" alt="Aeropuerto Internacional" class="footer-logo-img">
+            </div>
+
+            <!-- Input para Suscripción -->
+            <div class="footer-subscription">
+                <input type="email" class="form-control" placeholder="Ingresa tu correo para suscribirte">
+                <button class="btn btn-primary btn-suscribirse">Suscribirse</button>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="footer-social">
+                <a href="#" class="social-icon"><img src="imagenes/facebook.png" alt="Facebook" style="width: 30px;"></a>
+                <a href="#" class="social-icon"><img src="imagenes/twitter.png" alt="Twitter" style="width: 30px;"></a>
+                <a href="#" class="social-icon"><img src="imagenes/instagram.png" alt="Instagram" style="width: 30px;"></a>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center mt-3">
+            <p>&copy; 2024 Aeropuerto Internacional GATEWAY. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.com/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/auth.js"></script>
+</body>
+</html>

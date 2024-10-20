@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuelos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/sesion.js" ></script>
+</head>
+<body>
+
+    <!-- Header Secundario -->
+    <header class="main-header">
+        <div class="main-header_nav-secondary py-2">
+            <div class="container d-flex justify-content-end">
+                <a href="https://wa.me/573005394101" target="_blank" class="btn btn-outline-secondary btn-sm mr-2">
+                    <img src="imagenes/whatsapp.png" alt="WhatsApp" style="width: 20px;"> WhatsApp
+                </a>       
+                <a href="terminos.html" class="btn btn-outline-secondary btn-sm mr-2">
+                    Terminos y condiciones
+               </a>                   
+            </div>
+        </div>
+
+        <!-- Header Principal -->
+        <div class="main-header_nav-primary bg-white py-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="imagenes/logo.png" alt="Aeropuerto Internacional" class="logo-img">
+                    </a>
+                </div>
+
+                <!-- Menú de Navegación -->
+                <nav class="nav">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link" href="vuelos.html">Vuelos</a>
+                    <a href="sesion.html" class="nav-link" id="loginLink">Iniciar sesión</a>
+                    <a href="#" id="logoutLink" class="nav-link" style="display: none;">Cerrar sesión</a>                      
+                    <a class="nav-link" href="estacionamiento.html">Reserva de Estacionamiento</a>
+                    <a class="nav-link" href="empleados.html">Gestión de Empleados</a>
+                </nav>                
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <h2 class="titulo-vuelo">Vuelos Disponibles</h2>
+
+        <!-- Título de Mejores Ofertas -->
+    <div class="container mt-5">
+        <div class="row mt-4">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4">
+                <a href="#flight1" class="card card-ofertas" onclick="highlightRow('row1')">
+                    <img src="imagenes/medellin.jpeg" alt="Medellín" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Medellín</h5>
+                        <p class="card-text">Desde $899.000 COP</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4">
+                <a href="#flight2" class="card card-ofertas">
+                    <img src="imagenes/moscu.jpg" alt="Moscú" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Moscú</h5>
+                        <p class="card-text">Desde $1.899.000 COP</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="col-md-4">
+                <a href="#flight3" class="card card-ofertas">
+                    <img src="imagenes/luanda.jpg" alt="Luanda" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Luanda</h5>
+                        <p class="card-text">Desde $2.499.000 COP</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="col-md-4">
+                <a href="#flight4" class="card card-ofertas">
+                    <img src="imagenes/londres.webp" alt="Londres" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Londres</h5>
+                        <p class="card-text">Desde $3.200.000 COP</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="col-md-4">
+                <a href="#flight5" class="card card-ofertas">
+                    <img src="imagenes/tokio.webp" alt="Tokio" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Tokio</h5>
+                        <p class="card-text">Desde $4.500.000 COP</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="col-md-4">
+                <a href="#flight6" class="card card-ofertas">
+                    <img src="imagenes/paris.jpg" alt="París" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">París</h5>
+                        <p class="card-text">Desde $3.800.000 COP</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Tarjeta 7 -->
+            <div class="col-md-4">
+                <a href="#flight7" class="card card-ofertas">
+                    <img src="imagenes/sidney.jpg" alt="Sídney" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Sídney</h5>
+                        <p class="card-text">Desde $4.000.000 COP</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Tarjeta 8 -->
+            <div class="col-md-4">
+                <a href="#flight8" class="card card-ofertas">
+                    <img src="imagenes/roma.jpg" alt="Roma" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Roma</h5>
+                        <p class="card-text">Desde $2.700.000 COP</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Tarjeta 9 -->
+            <div class="col-md-4">
+                <a href="#flight9" class="card card-ofertas">
+                    <img src="imagenes/miami.jpg" alt="Miami" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Miami</h5>
+                        <p class="card-text">Desde $1.500.000 COP</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Tarjeta 10 -->
+            <div class="col-md-4">
+                <a href="#flight10" class="card card-ofertas">
+                    <img src="imagenes/cancun.webp" alt="Cancún" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Cancún</h5>
+                        <p class="card-text">Desde $899.000 COP</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Tarjeta 11 -->
+            <div class="col-md-4">
+                <a href="#flight11" class="card card-ofertas">
+                    <img src="imagenes/barcelona.jpg" alt="Barcelona" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Barcelona</h5>
+                        <p class="card-text">Desde $1.899.000 COP</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Tarjeta 12 -->
+            <div class="col-md-4">
+                <a href="#flight12" class="card card-ofertas">
+                    <img src="imagenes/nuevayork.jpeg" alt="Nueva York" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Nueva York</h5>
+                        <p class="card-text">Desde $2.499.000 COP</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-center">Busca tu vuelo</h2>
+        
+        <!-- Tarjeta de Consulta de Vuelos -->
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h5>Consulta de Vuelos</h5>
+            </div>
+            <div class="card-body">
+                <div class="form-group checkbox-vuelos">
+                    <label>
+                        <input type="radio" name="tripType" value="roundTrip" checked class="custom-checkbox">
+                        <span></span> Ida y Vuelta
+                    </label>
+                    <label>
+                        <input type="radio" name="tripType" value="oneWay" class="custom-checkbox">
+                        <span></span> Ida
+                    </label>
+                </div>
+                
+                
+                <div id="tripDetails" class="d-flex flex-wrap justify-content-between">
+                    <div class="form-group col-md-2">
+                        <input type="text" class="form-control" id="origin" placeholder="Ciudad de origen" autocomplete="off" list="suggestions">
+                        <datalist id="suggestions">
+                            <option value="Bogotá">
+                            <option value="Medellín">
+                            <option value="Cali">
+                            <option value="Cartagena">
+                        </datalist>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <input type="text" class="form-control" id="destination" placeholder="Ciudad de destino" autocomplete="off" list="suggestions">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <input type="date" class="form-control" id="departureDate">
+                    </div>
+                    <div class="form-group col-md-2" id="returnDateGroup">
+                        <input type="date" class="form-control" id="returnDate">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <input type="number" class="form-control" id="passengers" min="1" value="1" placeholder="Pasajeros">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <button class="btn btn-primary btn-suscribirse" id="searchButton">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Tabla de Vuelos -->
+<table class="table table-striped" id="flightsTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Vuelo</th>
+            <th>Origen</th>
+            <th>Destino</th>
+            <th>Fecha y Hora</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr id="flight1" class="flight-row"> 
+            <td>1</td>
+            <td>Medellín</td>
+            <td>Bogotá</td>
+            <td>Medellín</td>
+            <td id="date1">2024-11-10 08:30 AM</td>
+            <td id="status1">ver detalles</td>
+            <td>
+                <button class="btn btn-info btn-sm btn-suscribirse" onclick="viewFlightDetails('flight1')">Detalles</button>
+            </td>
+        </tr>
+        <tr id="flight2">
+            <td>2</td>
+            <td>Moscú</td>
+            <td>Bogotá</td>
+            <td>Moscú</td>
+            <td id="date2">2024-12-01 06:00 AM</td>
+            <td id="status2">ver detalles</td>
+            <td>
+                <button class="btn btn-info btn-sm btn-suscribirse" onclick="viewFlightDetails('flight2')">Detalles</button>
+            </td>
+        </tr>
+        <tr id="flight3">
+            <td>3</td>
+            <td>Luanda</td>
+            <td>Bogotá</td>
+            <td>Luanda</td>
+            <td id="date3">2024-11-15 11:00 PM</td>
+            <td id="status3">ver detalles</td>
+            <td>
+                <button class="btn btn-info btn-sm btn-suscribirse" onclick="viewFlightDetails('flight3')">Detalles</button>
+            </td>
+        </tr>
+        <tr id="flight4">
+            <td>4</td>
+            <td>Londres</td>
+            <td>Bogotá</td>
+            <td>Londres</td>
+            <td id="date4">2024-11-20 03:45 PM</td>
+            <td id="status4">ver detalles</td>
+            <td>
+                <button class="btn btn-info btn-sm btn-suscribirse" onclick="viewFlightDetails('flight4')">Detalles</button>
+            </td>
+        </tr>
+        <tr id="flight5">
+            <td>5</td>
+            <td>Tokio</td>
+            <td>Bogotá</td>
+            <td>Tokio</td>
+            <td id="date5">2024-12-05 10:00 AM</td>
+            <td id="status5">ver detalles</td>
+            <td>
+                <button class="btn btn-info btn-sm btn-suscribirse" onclick="viewFlightDetails('flight5')">Detalles</button>
+            </td>
+        </tr>
+        <tr id="flight6"> 
+            <td>6</td>
+            <td>París</td>
+            <td>Bogotá</td>
+            <td>París</td>
+            <td id="date6">2024-11-25 02:00 PM</td>
+            <td id="status6">ver detalles</td>
+            <td>
+                <button class="btn btn-info btn-sm btn-suscribirse" onclick="viewFlightDetails('flight6')">Detalles</button>
+            </td>
+        </tr>
+        <tr id="flight7">
+            <td>7</td>
+            <td>Sídney</td>
+            <td>Bogotá</td>
+            <td>Sídney</td>
+            <td id="date7">2024-12-02 07:15 PM</td>
+            <td id="status7">ver detalles</td>
+            <td>
+                <button class="btn btn-info btn-sm btn-suscribirse" onclick="viewFlightDetails('flight7')">Detalles</button>
+            </td>
+        </tr>
+        <tr id="flight8">
+            <td>8</td>
+            <td>Roma</td>
+            <td>Bogotá</td>
+            <td>Roma</td>
+            <td id="date8">2024-11-18 09:00 AM</td>
+            <td id="status8">ver detalles</td>
+            <td>
+                <button class="btn btn-info btn-sm btn-suscribirse" onclick="viewFlightDetails('flight8')">Detalles</button>
+            </td>
+        </tr>
+        <tr id="flight9">
+            <td>9</td>
+            <td>Miami</td>
+            <td>Bogotá</td>
+            <td>Miami</td>
+            <td id="date9">2024-12-07 04:30 PM</td>
+            <td id="status9">ver detalles</td>
+            <td>
+                <button class="btn btn-info btn-sm btn-suscribirse" onclick="viewFlightDetails('flight9')">Detalles</button>
+            </td>
+        </tr>
+        <tr id="flight10">
+            <td>10</td>
+            <td>Cancún</td>
+            <td>Bogotá</td>
+            <td>Cancún</td>
+            <td id="date10">2024-12-03 01:30 PM</td>
+            <td id="status10">ver detalles</td>
+            <td>
+                <button class="btn btn-info btn-sm btn-suscribirse" onclick="viewFlightDetails('flight10')">Detalles</button>
+            </td>
+        </tr>
+        <tr id="flight11">
+            <td>11</td>
+            <td>Barcelona</td>
+            <td>Bogotá</td>
+            <td>Barcelona</td>
+            <td id="date11">2024-11-30 12:45 PM</td>
+            <td id="status11">ver detalles</td>
+            <td>
+                <button class="btn btn-info btn-sm btn-suscribirse" onclick="viewFlightDetails('flight11')">Detalles</button>
+            </td>
+        </tr>
+        <tr id="flight12">
+            <td>12</td>
+            <td>Nueva York</td>
+            <td>Bogotá</td>
+            <td>Nueva York</td>
+            <td id="date12">2024-12-08 09:30 AM</td>
+            <td id="status12">ver detalles</td>
+            <td>
+                <button class="btn btn-info btn-sm btn-suscribirse" onclick="viewFlightDetails('flight12')">Detalles</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+        <!-- Contenedor para los detalles del vuelo -->
+    <div id="flightDetails" style="display: none; border: 1px solid #ccc; padding: 20px; background-color: #f9f9f9; margin-top: 20px;">
+        <h3 class="detalles-vuelo">Detalles del Vuelo</h3>
+        <div id="detailsContent"></div>
+        <button class="detalles-vuelo-bien btn-suscribirse" onclick="closeFlightDetails()">Cerrar</button>
+        <button id="buyButton" class="btn-suscribirse detalles-vuelo-bien" onclick="buyFlight()">Comprar</button>
+    </div>
+
+
+        <!-- Sección de Detalles de Vuelo -->
+        <div id="flightDetails" class="mt-4" style="display:none;">
+            <h3>Detalles del Vuelo</h3>
+            <div id="detailsContent"></div>
+        </div>
+    </div>
+
+    <footer class="footer mt-5">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="imagenes/logo.png" alt="Aeropuerto Internacional" class="footer-logo-img">
+            </div>
+
+            <!-- Input para Suscripción -->
+            <div class="footer-subscription">
+                <input type="email" class="form-control" placeholder="Ingresa tu correo para suscribirte">
+                <button class="btn btn-primary btn-suscribirse">Suscribirse</button>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="footer-social">
+                <a href="#" class="social-icon"><img src="imagenes/facebook.png" alt="Facebook" style="width: 30px;"></a>
+                <a href="#" class="social-icon"><img src="imagenes/twitter.png" alt="Twitter" style="width: 30px;"></a>
+                <a href="#" class="social-icon"><img src="imagenes/instagram.png" alt="Instagram" style="width: 30px;"></a>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center mt-3">
+            <p>&copy; 2024 Aeropuerto Internacional GATEWAY. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/vuelos.js"></script>
+    <script src="/js/auth.js"></script>
+</body>
+</html>

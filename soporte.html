@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte - Aeropuerto Internacional</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header Secundario -->
+    <header class="main-header">
+        <div class="main-header_nav-secondary py-2">
+            <div class="container d-flex justify-content-end">
+                <a href="https://wa.me/573005394101" target="_blank" class="btn btn-outline-secondary btn-sm mr-2">
+                    <img src="imagenes/whatsapp.png" alt="WhatsApp" style="width: 20px;"> WhatsApp
+                </a>         
+                <a href="terminos.html" class="btn btn-outline-secondary btn-sm mr-2">
+                    Terminos y condiciones
+               </a>                 
+            </div>
+        </div>
+    
+        <!-- Header Principal -->
+        <div class="main-header_nav-primary bg-white py-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="imagenes/logo.png" alt="Aeropuerto Internacional" class="logo-img">
+                    </a>
+                </div>
+
+                <!-- Menú de Navegación -->
+                <nav class="nav">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link" href="vuelos.html">Vuelos</a>
+                    <a href="sesion.html" class="nav-link" id="loginLink">Iniciar sesión</a>
+                    <a href="#" id="logoutLink" class="nav-link" style="display: none;">Cerrar sesión</a>                   
+                    <a class="nav-link" href="estacionamiento.html">Reserva de Estacionamiento</a>
+                    <a class="nav-link" href="empleados.html">Gestión de Empleados</a>
+                </nav>                
+            </div>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <h1 class="text-center">Centro de soporte</h1>
+        <p class="text-center">Aquí encontrarás toda la información necesaria para hacer tu viaje más fácil y cómodo.</p>
+
+        <div class="card my-4">
+            <div class="card-header">
+                <h4>¿Cómo obtener el Check-In?</h4>
+            </div>
+            <div class="card-body">
+                <p>Para obtener tu Check-In, sigue estos pasos:</p>
+                <ol>
+                    <li>Visita nuestra página web o utiliza nuestra aplicación móvil.</li>
+                    <li>Ingresa tus datos de vuelo.</li>
+                    <li>Selecciona tu asiento.</li>
+                    <li>Confirma tus datos y genera tu tarjeta de embarque.</li>
+                </ol>
+                <p>Recuerda que el Check-In se puede realizar 24 horas antes del vuelo.</p>
+            </div>
+        </div>
+
+        <div class="card my-4">
+            <div class="card-header">
+                <h4>Centro de Ayuda</h4>
+            </div>
+            <div class="card-body">
+                <p>Si tienes preguntas o necesitas asistencia, puedes visitar nuestro Centro de Ayuda:</p>
+                <ul>
+                    <li><a href="mailto:soporte@aeropuerto.com">soporte@aeropuerto.com</a></li>
+                    <li>Teléfono: +57 123 456 7890</li>
+                    <li>Horario: Lunes a Domingo de 8:00 AM a 8:00 PM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card my-4">
+            <div class="card-header">
+                <h4>Requisitos de Viaje</h4>
+            </div>
+            <div class="card-body">
+                <p>Antes de viajar, asegúrate de tener en cuenta los siguientes requisitos:</p>
+                <ul>
+                    <li>Documento de identidad válido.</li>
+                    <li>Pasaporte (si viajas internacionalmente).</li>
+                    <li>Visas requeridas para tu destino.</li>
+                    <li>Comprobantes de vacunación, si es necesario.</li>
+                </ul>
+                <p>Consulta con tu aerolínea los requisitos específicos para tu vuelo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="imagenes/logo.png" alt="Aeropuerto Internacional" class="footer-logo-img">
+            </div>
+
+            <!-- Input para Suscripción -->
+            <div class="footer-subscription">
+                <input type="email" class="form-control" placeholder="Ingresa tu correo para suscribirte">
+                <button class="btn btn-primary btn-suscribirse">Suscribirse</button>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="footer-social">
+                <a href="#" class="social-icon"><img src="imagenes/facebook.png" alt="Facebook" style="width: 30px;"></a>
+                <a href="#" class="social-icon"><img src="imagenes/twitter.png" alt="Twitter" style="width: 30px;"></a>
+                <a href="#" class="social-icon"><img src="imagenes/instagram.png" alt="Instagram" style="width: 30px;"></a>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center mt-3">
+            <p>&copy; 2024 Aeropuerto Internacional GATEWAY. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.com/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeropuerto Internacional - Registro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header Secundario -->
+    <header class="main-header">
+        <div class="main-header_nav-secondary py-2">
+            <div class="container d-flex justify-content-end">
+                <a href="https://wa.me/573005394101" target="_blank" class="btn btn-outline-secondary btn-sm mr-2">
+                    <img src="imagenes/whatsapp.png" alt="WhatsApp" style="width: 20px;"> WhatsApp
+                </a>           
+                <a href="terminos.html" class="btn btn-outline-secondary btn-sm mr-2">
+                    Terminos y condiciones
+               </a>               
+            </div>
+        </div>
+    
+        <!-- Header Principal -->
+        <div class="main-header_nav-primary bg-white py-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="imagenes/logo.png" alt="Aeropuerto Internacional" class="logo-img">
+                    </a>
+                </div>
+
+                <!-- Menú de Navegación -->
+                <nav class="nav">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link" href="vuelos.html">Vuelos</a>
+                    <a href="sesion.html" class="nav-link" id="loginLink">Iniciar sesión</a>
+                    <a href="#" id="logoutLink" class="nav-link" style="display: none;">Cerrar sesión</a>                    
+                    <a class="nav-link" href="estacionamiento.html">Reserva de Estacionamiento</a>
+                    <a class="nav-link" href="empleados.html">Gestión de Empleados</a>
+                </nav>                
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Registro de Usuario</h2>
+        <p class="text-center mb-4">Registrarte es esencial para acceder a nuestros servicios exclusivos y mejorar tu experiencia en el Aeropuerto Internacional. ¡No te lo pierdas!</p>
+        
+        <div class="card mx-auto" style="max-width: 500px;">
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Pepito " required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" class="form-control" id="apellidos" placeholder="Pérez" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="correo" placeholder="example@ejemplo-com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" class="form-control" id="telefono" placeholder="+57 333 444 5555" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edad">Edad:</label>
+                        <input type="number" class="form-control" id="edad" placeholder="Edad" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sexo">Sexo:</label>
+                        <select class="form-control" id="sexo" required>
+                            <option value="">Selecciona tu sexo</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input type="checkbox" class="form-check-input" id="terminos" required>
+                        <label class="form-check-label" for="terminos">Acepto los términos y condiciones</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block btn-suscribirse">Registrarme</button>
+                    <div class="text-center mt-3">
+                        <p>¿Ya tienes una cuenta? <a href="sesion.html">inicia sesión aquí</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="imagenes/logo.png" alt="Aeropuerto Internacional" class="footer-logo-img">
+            </div>
+
+            <!-- Input para Suscripción -->
+            <div class="footer-subscription">
+                <input type="email" class="form-control" placeholder="Ingresa tu correo para suscribirte">
+                <button class="btn btn-primary btn-suscribirse">Suscribirse</button>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="footer-social">
+                <a href="#" class="social-icon"><img src="imagenes/facebook.png" alt="Facebook" style="width: 30px;"></a>
+                <a href="#" class="social-icon"><img src="imagenes/twitter.png" alt="Twitter" style="width: 30px;"></a>
+                <a href="#" class="social-icon"><img src="imagenes/instagram.png" alt="Instagram" style="width: 30px;"></a>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center mt-3">
+            <p>&copy; 2024 Aeropuerto Internacional GATEWAY. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="/js/auth.js"></script>
+</body>
+</html>

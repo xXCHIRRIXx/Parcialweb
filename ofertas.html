@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas - Aeropuerto Internacional</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/sesion.js" ></script>
+    <script src="js/inicio-s.js"></script>
+</head>
+<body>
+
+    <!-- Header Secundario -->
+    <header class="main-header">
+        <div class="main-header_nav-secondary py-2">
+            <div class="container d-flex justify-content-end">
+                <a href="https://wa.me/573005394101" target="_blank" class="btn btn-outline-secondary btn-sm mr-2">
+                    <img src="imagenes/whatsapp.png" alt="WhatsApp" style="width: 20px;"> WhatsApp
+                </a>        
+                <a href="terminos.html" class="btn btn-outline-secondary btn-sm mr-2">
+                    Terminos y condiciones
+               </a>                  
+            </div>
+        </div>
+    
+        <!-- Header Principal -->
+        <div class="main-header_nav-primary bg-white py-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="imagenes/logo.png" alt="Aeropuerto Internacional" class="logo-img">
+                    </a>
+                </div>
+
+                <!-- Menú de Navegación -->
+                <nav class="nav">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link" href="vuelos.html">Vuelos</a>
+                    <a href="sesion.html" class="nav-link" id="loginLink">Iniciar sesión</a>
+                    <a href="#" id="logoutLink" class="nav-link" style="display: none;">Cerrar sesión</a>                 
+                    <a class="nav-link" href="estacionamiento.html">Reserva de Estacionamiento</a>
+                    <a class="nav-link" href="empleados.html">Gestión de Empleados</a>
+                </nav>                
+            </div>
+        </div>
+    </header>
+
+    <!-- Título de Ofertas -->
+    <div class="container mt-5">
+        <h2 class="text-center">Nuestras Ofertas Especiales</h2>
+        <p class="text-center">Aprovecha nuestras promociones y descuentos exclusivos. ¡No te lo pierdas!</p>
+        
+        <!-- Carrusel de Ofertas -->
+        <div id="ofertasCarrusel" class="carousel slide mt-4" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Primer Elemento del Carrusel -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card card-ofertas">
+                                <img src="imagenes/novedad1.jpg" class="card-img-top" alt="Novedad 1">
+                                <div class="card-body">
+                                    <h5 class="card-title card-novedades-img">Membresía Premium</h5>
+                                    <p class="card-text">Acceso a beneficios exclusivos y tarifas especiales en todos tus viajes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-ofertas">
+                                <img src="imagenes/novedad2.webp" class="card-img-top" alt="Novedad 2">
+                                <div class="card-body">
+                                    <h5 class="card-title card-novedades-img">Paquete de Viaje Familiar</h5>
+                                    <p class="card-text">Descuentos especiales para familias que viajan juntas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-ofertas">
+                                <img src="imagenes/novedad3.webp" class="card-img-top" alt="Novedad 3">
+                                <div class="card-body">
+                                    <h5 class="card-title card-novedades-img">Excursiones Especiales</h5>
+                                    <p class="card-text">Descubre lugares únicos con nuestras excursiones a precios especiales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segundo Elemento del Carrusel -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card card-ofertas">
+                                <img src="imagenes/novedad4.jpeg" class="card-img-top" alt="Novedad 4">
+                                <div class="card-body">
+                                    <h5 class="card-title card-novedades-img">Ofertas de Último Minuto</h5>
+                                    <p class="card-text">Consigue las mejores ofertas para tus viajes de última hora.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-ofertas">
+                                <img src="imagenes/novedad5.jpeg" class="card-img-top" alt="Novedad 5">
+                                <div class="card-body">
+                                    <h5 class="card-title card-novedades-img">Viajes de Aventura</h5>
+                                    <p class="card-text">Adéntrate en la aventura con nuestros paquetes especiales.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-ofertas">
+                                <img src="imagenes/novedad6.avif" class="card-img-top" alt="Novedad 6">
+                                <div class="card-body">
+                                    <h5 class="card-title card-novedades-img">Descuentos por reserva anticipada</h5>
+                                    <p class="card-text">Ahorra más al reservar tus viajes con antelación.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controles del Carrusel -->
+            <a class="carousel-control-prev" href="#ofertasCarrusel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#ofertasCarrusel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="imagenes/logo.png" alt="Aeropuerto Internacional" class="footer-logo-img">
+            </div>
+
+            <!-- Input para Suscripción -->
+            <div class="footer-subscription">
+                <input type="email" class="form-control" placeholder="Ingresa tu correo para suscribirte">
+                <button class="btn btn-primary btn-suscribirse">Suscribirse</button>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="footer-social">
+                <a href="#" class="social-icon"><img src="imagenes/facebook.png" alt="Facebook" style="width: 30px;"></a>
+                <a href="#" class="social-icon"><img src="imagenes/twitter.png" alt="Twitter" style="width: 30px;"></a>
+                <a href="#" class="social-icon"><img src="imagenes/instagram.png" alt="Instagram" style="width: 30px;"></a>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center mt-3">
+            <p>&copy; 2024 Aeropuerto Internacional GATEWAY. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="/js/auth.js"></script>
+</body>
+</html>
